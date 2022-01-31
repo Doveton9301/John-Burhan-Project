@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<html class="no-js lt-ie9 lt-ie8">
+<html class="no-js lt-ie9">
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RH03</title>
+	
+	<link rel="shortcut icon" href="../luxe/favicon.ico">
+	<link rel="stylesheet" href="css/superfish.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/respond.min.js"></script>
+
+</head>
+<body>
+	<div id="fh5co-wrapper">
+	<div id="fh5co-page">
+	<div id="fh5co-header">
+		<header id="fh5co-header-section">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+					<h1 id="fh5co-logo"><a href="index.html">HOTEL ROYALE HAYATI</a></h1>
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="hotel.html" class="fh5co-sub-ddown">Rooms</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+	</div>
+	<div class="fh5co-parallax" style="background-image: url('images/slider1.jpg');" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+					<div class="fh5co-intro fh5co-table-cell">
+						<h1 class="text-center">Book Here</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div>
+      <body>
+      <p>
+      <script>
+         function bill()
+         {
+          days=parseInt(document.frm.t1.value);
+          room=0
+          if(document.frm.r1.value=="a")
+          room=2000*days
+          else if(document.frm.r1.value=="b")
+          room=3000*days
+          else 
+          room=4500*days
+          ef=0
+          if(document.frm.c1.checked)
+          ef=ef+150*days
+          if(document.frm.c2.checked)
+          ef=ef+200*days
+          if(document.frm.c3.checked)
+          ef=ef+100*days
+          if(document.frm.c4.checked)
+          ef=ef+200*days
+          if(document.frm.c5.checked)
+          ef=ef+500*days
+          if(document.frm.c6.checked)
+          ef=ef+50*days
+          document.frm.t2.value=room;
+          document.frm.t3.value=ef;
+          total=room+ef;
+          tax=total*0.18;
+          document.frm.t4.value=tax;
+          document.frm.t5.value=total+tax;
+         }
+       </script>
+       <table align="center" border="10">
+        <form name="frm">
+        <tr>
+          <td>Name of Person(s)<br> Staying  
+          <td><input type="text" name="t6">
+         </tr>
+         <tr>
+          <td>Contact Number
+          <td><input type="text" name="t7">
+         </tr>
+         <tr>
+          <td>Number of Days <br> Stayed
+          <td><input type="text" name="t1">
+         </tr>
+         <tr>
+          <td class="text-center">Room Type and <br> Cost/Night
+          <td>
+           <input type="radio" name="r1" value="a">Economy @ &#8377 2000<br>
+           <input type="radio" name="r1" value="b">Business @ &#8377 3000<br>
+           <input type="radio" name="r1" value="c">Presidential Suite @ &#8377 4500
+         </tr>
+         <tr>
+          <td class="text-center">Extra Facilities
+          <td>
+           <input type="checkbox" name="c1">Restaurant @ &#8377 150<br>
+           <input type="checkbox" name="c2">Bar @ &#8377 200<br>
+           <input type="checkbox" name="c3">Vallet Parking @ &#8377 100<br>
+           <input type="checkbox" name="c4">Gym @ &#8377 200<br>
+           <input type="checkbox" name="c5">Spa @ &#8377 500<br>
+           <input type="checkbox" name="c6">Swimming Pool @ &#8377 50
+         </tr>
+         <tr>
+          <td colspan=2><center><input type="button" value="Calculate Bill" OnClick="bill()"></center>
+         </tr>
+         <tr>
+          <td class="text-center">Cost of Room(&#8377)
+          <td><input type="text" name="t2">
+         </tr>
+         <tr>
+          <td class="text-center">Cost of Facilities(&#8377)
+          <td><input type="text" name="t3">
+         </tr>
+         <tr>
+          <td class="text-center">Tax@18%(&#8377)
+          <td><input type="text" name="t4">
+         </tr>
+         <tr>
+          <td class="text-center">Total Cost(&#8377)
+          <td><input type="text" name="t5">
+         </tr>
+        </form>
+         <tr>
+          <td colspan=2><center><input type="reset" value="Clear"></center>
+        </tr>
+       </table>
+       </p>
+      </body>
+	</div>
+    <br>
+
+	<footer id="footer" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="copyright">
+						<p><small>&copy; 2021 Hotel Royale Hayati. <br> All Rights Reserved. <br>
+						Designed by <a href="http://John and Burhanuddin.co" target="_blank">John and Burhanuddin</a> </small></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>Company</h3>
+							<ul class="link">
+								<li><a href="https://royalehayati-aboutus.co">About Us</a></li>
+								<li><a href="https://royalehayati-rooms.co">Rooms</a></li>
+								<li><a href="https://royalehayati-customercare.co">Customer Care</a></li>
+								<li><a href="https://royalehayati-contactus.co">Contact Us</a></li>
+
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>Our Facilities</h3>
+							<ul class="link">
+								<li><a href="https://royalehayati-restaurants.co">Restaurant</a></li>
+								<li><a href="https://royalehayati-bars.co">Bars</a></li>
+								<li><a href="https://royalehayati-pickup.co">Vallet Parking</a></li>
+								<li><a href="https://royalehayati-swimmingpool.co">Swimming Pool</a></li>
+								<li><a href="https://royalehayati-spa.co">Spa</a></li>
+								<li><a href="https://royalehayati-gym.co">Gym</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<form action="#" id="form-subscribe">
+								<div class="form-field">
+									<input type="email" placeholder="Email Address" id="email">
+									<input type="submit" id="submit" value="Send">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<ul class="social-icons">
+						<li>
+							<a href="#"><i class="icon-twitter-with-circle"></i></a>
+							<a href="#"><i class="icon-facebook-with-circle"></i></a>
+							<a href="#"><i class="icon-instagram-with-circle"></i></a>
+							<a href="#"><i class="icon-linkedin-with-circle"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>

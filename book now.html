@@ -1,0 +1,77 @@
+<html>
+<body background="../luxe/fi1.jpg">
+<h1><center>Hotel Bill System</center></h1>
+<script>
+function bill()
+{
+ days=parseInt(document.frm.t1.value);
+ room=0
+ if(document.frm.r1.value=="a")
+ room=2000*days
+ else if(document.frm.r1.value=="b")
+ room=1500*days
+ else 
+ room=3500*days
+ ef=0
+ if(document.frm.c1.checked)
+ ef=ef+200*days
+ if(document.frm.c2.checked)
+ ef=ef+100*days
+ if(document.frm.c3.checked)
+ ef=ef+500*days
+document.frm.t2.value=room;
+document.frm.t3.value=ef;
+total=room+ef;
+tax=total*0.18;
+document.frm.t4.value=tax;
+document.frm.t5.value=total+tax;
+ }
+</script>
+<table align="center" border="10" bgcolor="grey">
+<form name="frm">
+<tr>
+<td>Number of Days Stayed
+<td><input type="text" name="t1">
+</tr>
+<tr>
+<td>Room Type
+<td>
+<input type="radio" name="r1" value="b">Family @2000<br>
+<input type="radio" name="r1" value="a">Business @2500<br>
+<input type="radio" name="r1" value="c">Presidential Suite @3500<br>
+<input type="radio" name="r1" value="a">Pent House @5000
+</tr>
+<tr>
+<td>Extra Facilities
+<td>
+<input type="checkbox" name="c2">Wi-Fi @100<br>
+<input type="checkbox" name="c1">Gymnasium @200<br>
+<input type="checkbox" name="c3">Spa @500<br>
+<input type="checkbox" name="c3">Swimming Pool @250
+</tr>
+<tr>
+<td colspan=2><center><input type="button" value="Calculate Bill" OnClick="bill()"></center>
+</tr>
+<tr>
+<td>Cost of Room
+<td><input type="text" name="t2">
+</tr>
+<tr>
+<td>Cost of Facilities
+<td><input type="text" name="t3">
+</tr>
+<tr>
+<td>Tax@18%
+<td><input type="text" name="t4">
+</tr>
+<tr>
+<td>Total Cost
+<td><input type="text" name="t5">
+</tr>
+</form>
+<tr>
+<td colspan=2><center><input type="reset" value="Reset"></center>
+</tr>
+</table>
+</body>
+</html>
